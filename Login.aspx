@@ -18,8 +18,7 @@
                     <div class="card card1 bg-dark">
                         <div class="row justify-content-center my-auto bg-dark">
                             <div class="col-md-8 col-10 my-5">
-                                <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="https://i.imgur.com/PSXxjNY.png"> </div>
-                                <h3 class="mb-5 text-center heading">Tepinet</h3>
+                                <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="img/logo.png"/> </div>
                                 <h6 class="msg-info">Iniciar Sesión</h6>
                                 <div class="form-group"> <label class="form-control-label text-muted">Username</label> <asp:TextBox runat="server" ID="txtUser" CssClass="form-control"></asp:TextBox> </div>
                                 <div class="form-group"> <label class="form-control-label text-muted">Password</label> <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control"></asp:TextBox> </div>
@@ -28,7 +27,7 @@
                             </div>
                         </div>
                         <div class="bottom text-center mb-5">
-                            <p href="#" class="sm-text mx-auto mb-3"><button class="btn btn-link ml-2">Crear Cuenta</button></p>
+                            <p href="#" class="sm-text mx-auto mb-3"><button class="btn btn-warning ml-2">Crear Cuenta</button></p>
                         </div>
                     </div>
                     <div class="card card2 bg-dark">
