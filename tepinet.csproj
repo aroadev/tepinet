@@ -78,6 +78,7 @@
     <Compile Include="Backend\Business\Login_BC.cs" />
     <Compile Include="Backend\Connection.cs" />
     <Compile Include="Backend\Data\Login_DC.cs" />
+    <Compile Include="Backend\Data\Register_DC.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
