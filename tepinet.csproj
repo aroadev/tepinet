@@ -67,15 +67,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\esilos.css" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\desing.png" />
+    <Content Include="img\icono.png" />
+    <Content Include="img\ilustracion1.jpg" />
+    <Content Include="img\ilustracion2.png" />
+    <Content Include="img\ilustracion4.jpg" />
+    <Content Include="img\img1.jpg" />
+    <Content Include="img\img10.jpg" />
+    <Content Include="img\img11.jpg" />
+    <Content Include="img\img12.jpg" />
+    <Content Include="img\img13.jpg" />
+    <Content Include="img\img14.jpg" />
+    <Content Include="img\img15.jpg" />
+    <Content Include="img\img2.jpg" />
+    <Content Include="img\img4.jpg" />
+    <Content Include="img\img5.jpg" />
+    <Content Include="img\img6.jpg" />
+    <Content Include="img\img8.jpg" />
+    <Content Include="img\img9.jpg" />
     <Content Include="img\logo.png" />
+    <Content Include="img\portada.jpg" />
+    <Content Include="img\usuario1.jpg" />
+    <Content Include="img\usuario2.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="css\custom.css" />
-    <Content Include="img\bg.jpg" />
+    <Content Include="Main.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backend\Business\Login_BC.cs" />
+    <Compile Include="Backend\Business\Register_BC.cs" />
     <Compile Include="Backend\Connection.cs" />
     <Compile Include="Backend\Data\Login_DC.cs" />
     <Compile Include="Backend\Data\Register_DC.cs" />
@@ -85,6 +109,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
@@ -96,6 +127,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\img" />
+    <Content Include="img\img3" />
+    <Content Include="img\img7" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
