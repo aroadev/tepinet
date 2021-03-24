@@ -21,13 +21,13 @@
                                 <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="img/logo.png"/> </div>
                                 <h6 class="msg-info">Iniciar Sesión</h6>
                                 <div class="form-group"> <label class="form-control-label text-muted">Username</label> <asp:TextBox runat="server" ID="txtUser" CssClass="form-control"></asp:TextBox> </div>
-                                <div class="form-group"> <label class="form-control-label text-muted">Password</label> <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control"></asp:TextBox> </div>
+                                <div class="form-group"> <label class="form-control-label text-muted">Password</label> <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control" TextMode="Password"></asp:TextBox> </div>
                                 <div class="row justify-content-center my-3 px-3"> <asp:Button runat="server" ID="btnLogin" CssClass="btn btn-block btn-primary" Text="Iniciar Sesión" OnClick="btnLogin_Click"/> </div>
                                 <div class="row justify-content-center my-2"> <a href="#"><small class="text-muted">¿Olvidó su contraseña?</small></a> </div>
                             </div>
                         </div>
                         <div class="bottom text-center mb-5">
-                            <p href="#" class="sm-text mx-auto mb-3"><button class="btn btn-warning ml-2">Crear Cuenta</button></p>
+                            <p href="Register.aspx" class="sm-text mx-auto mb-3"><asp:Button runat="server" ID="btnCreateAccount" CssClass="btn btn-warning ml-2" OnClick="btnCreateAccount_Click" Text="Crear Una Cuenta"/></p>
                         </div>
                     </div>
                     <div class="card card2 bg-dark">

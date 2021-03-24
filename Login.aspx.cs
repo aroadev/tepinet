@@ -38,9 +38,14 @@ namespace tepinet.Backend
             {
                 string rUser = ds.Tables[0].Rows[0]["USERNAME"].ToString();
                 Session["UserData"] = ds;
-                Response.Redirect("");
+                Response.Redirect("Main.aspx");
             }
 
+        }
+
+        protected void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Register.aspx");
         }
     }
 }

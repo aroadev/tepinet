@@ -46,6 +46,7 @@
 							<div class="form-group">
 								<label class="control-label" for="signupPasswordagain">Confirmar Contraseña</label>
 								<asp:TextBox runat="server" ID="txtConfirm" CssClass="form-control" TextMode="Password"></asp:TextBox>
+								<asp:Label runat="server" ID="lblError" CssClass="h6 text-danger"></asp:Label>
 							</div>
 							<p></p>
 							<div class="form-group">
@@ -54,7 +55,7 @@
 							<p></p>
 							<p class="form-group">Creando tu cuenta, aceptas nuestros <a href="#">términos de servicio</a> y nuestras <a href="#">políticas de privacidad</a>.</p>
 							<hr>
-							<p>¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
+							<p>¿Ya tienes cuenta? <a href="Login.aspx">Inicia Sesión</a></p>
 						</div>
 					</div>
 				</div>
