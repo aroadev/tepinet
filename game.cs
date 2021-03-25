@@ -7,7 +7,7 @@ namespace tepinet
 {
     public class game
     {
-        public int GameName { get; set; }
-        public int VersionIO { get; set; }
+        public string GameName { get; set; }
+        public string VersionIO { get; set; }
     }
 }

@@ -99,6 +99,7 @@
     <Content Include="css\custom.css" />
     <Content Include="Main.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="tryjson.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +133,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tryjson.aspx.cs">
+      <DependentUpon>tryjson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tryjson.aspx.designer.cs">
+      <DependentUpon>tryjson.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
