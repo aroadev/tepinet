@@ -99,15 +99,17 @@
     <Content Include="css\custom.css" />
     <Content Include="Main.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Restore_Password.aspx" />
     <Content Include="tryjson.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backend\Business\Login_BC.cs" />
     <Compile Include="Backend\Business\Register_BC.cs" />
-    <Compile Include="Backend\Connection.cs" />
+    <Compile Include="Backend\Business\Restore_Password_BC.cs" />
     <Compile Include="Backend\Data\Login_DC.cs" />
     <Compile Include="Backend\Data\Register_DC.cs" />
+    <Compile Include="Backend\Data\Restore_Password_DC.cs" />
     <Compile Include="game.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -133,6 +135,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restore_Password.aspx.cs">
+      <DependentUpon>Restore_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restore_Password.aspx.designer.cs">
+      <DependentUpon>Restore_Password.aspx</DependentUpon>
     </Compile>
     <Compile Include="tryjson.aspx.cs">
       <DependentUpon>tryjson.aspx</DependentUpon>
