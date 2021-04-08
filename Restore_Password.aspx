@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div class="row align-content-center text-center text-white">
+            <div runat="server" ID="mainDiv" class="row align-content-center text-center text-white">
                 <div class="col-4"></div>
                 <div class="col-4">
                     <div class="card bg-dark mx-auto">
@@ -38,6 +38,27 @@
 							</div>
 						</div>
 					</div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+
+            <div id="codeDiv" runat="server" visible="false" class="row align-content-center text-center text-white">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="card bg-dark mx-auto">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2> Código de Verificación </h2>
+                            </div>
+                            <div class="form-group">
+                                <label> Envíamos a tu correo un código de verificación. Porfavor ingrésalo: </label>
+                                <asp:TextBox runat="server" ID="txtCode" CssClass="form-control"></asp:TextBox>
+                                <asp:Button runat="server" ID="btnVerification" CssClass="btn btn-block btn-primary" Text="Verificar" />
+                                <asp:Button runat="server" ID="btnResend" CssClass="btn btn-block btn-secondary" Text="Reenviar" Enabled="false"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4"></div>
             </div>
