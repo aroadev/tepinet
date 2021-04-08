@@ -29,8 +29,10 @@
                                 <asp:Label runat="server" ID="lblEmailNotFound" CssClass="text-danger h3" Text="Email no encontrado. Porfavor regístrese" Visible="false"></asp:Label>
                                 <p></p>
                                 <asp:Button runat="server" ID="Btn_SearchEmail" CssClass="btn btn-success btn-block" Text="Verificar" OnClick="Btn_SearchEmail_Click" Visible="true"/>
+                                <p></p>
                                 <asp:Button runat="server" ID="btnRegister" CssClass="btn btn-dark" Text="Registrarse" OnClick="btnRegister_Click" Visible="false" />
-                                <asp:LinkButton runat="server" ID="lnkTryAgain" CssClass="btn btn-link" Text="volver a intentar" OnClick="lnkTryAgain_Click"></asp:LinkButton>
+                                <p></p>
+                                <asp:LinkButton runat="server" ID="lnkTryAgain" CssClass="btn btn-link" Text="¿Volver a intentar?" OnClick="lnkTryAgain_Click"></asp:LinkButton>
 							</div>
                             <br />
                             <div class="form-group">
@@ -43,7 +45,7 @@
             </div>
 
 
-            <div id="codeDiv" runat="server" visible="false" class="row align-content-center text-center text-white">
+            <div id="codeDiv" runat="server" visible="false" class="row align-content-center text-center text-white mx-auto">
                 <div class="col-4"></div>
                 <div class="col-4">
                     <div class="card bg-dark mx-auto">
@@ -53,9 +55,14 @@
                             </div>
                             <div class="form-group">
                                 <label> Envíamos a tu correo un código de verificación. Porfavor ingrésalo: </label>
+                                
                                 <asp:TextBox runat="server" ID="txtCode" CssClass="form-control"></asp:TextBox>
+                                <p></p>
                                 <asp:Button runat="server" ID="btnVerification" CssClass="btn btn-block btn-primary" Text="Verificar" />
+                                <p></p>
                                 <asp:Button runat="server" ID="btnResend" CssClass="btn btn-block btn-secondary" Text="Reenviar" Enabled="false"/>
+                                <p></p>
+                                <label> Espera un minuto antes de reenviar el código </label>
                             </div>
                         </div>
                     </div>

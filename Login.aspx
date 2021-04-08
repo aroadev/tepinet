@@ -23,7 +23,7 @@
                                 <div class="form-group"> <label class="form-control-label text-muted">Username</label> <asp:TextBox runat="server" ID="txtUser" CssClass="form-control"></asp:TextBox> </div>
                                 <div class="form-group"> <label class="form-control-label text-muted">Password</label> <asp:TextBox runat="server" ID="txtPassword" CssClass="form-control" TextMode="Password"></asp:TextBox> </div>
                                 <div class="row justify-content-center my-3 px-3"> <asp:Button runat="server" ID="btnLogin" CssClass="btn btn-block btn-primary" Text="Iniciar Sesión" OnClick="btnLogin_Click"/> </div>
-                                <div class="row justify-content-center my-2"> <a href="#"><small class="text-muted">¿Olvidó su contraseña?</small></a> </div>
+                                <div class="row justify-content-center my-2"> <a href="Restore_Password.aspx"><small class="text-muted">¿Olvidó su contraseña?</small></a> </div>
                             </div>
                         </div>
                         <div class="bottom text-center mb-5">

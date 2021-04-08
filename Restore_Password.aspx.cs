@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 using tepinet.Backend.Business;
 using System.Net;
 using System.Net.Mail;
+using System.Timers;
 
 namespace tepinet
 {
@@ -26,13 +27,15 @@ namespace tepinet
 
         protected void Btn_SearchEmail_Click(object sender, EventArgs e)
         {
-            string Email = txtEmail.Text;
-            DataSet ds = oBc.Validate_Email(Email);
+            string RecoveryEmail = txtEmail.Text;
+            DataSet ds = oBc.Validate_Email(RecoveryEmail);
+            
 
             if(ds.Tables[0].Rows.Count == 0)
             {
                 lblEmailNotFound.Visible = true;
                 btnRegister.Visible = true;
+                lnkTryAgain.Visible = true;
 
                 txtEmail.Visible = false;
                 lbl1.Visible = false;
@@ -40,9 +43,12 @@ namespace tepinet
             }
             else
             {
+                string UEmail = ds.Tables[0].Rows[0]["EMAIL"].ToString();
                 mainDiv.Visible = false;
                 codeDiv.Visible = true;
-                SendMail();
+                SendMail(UEmail);
+
+
             }    
 
         }
@@ -93,14 +99,14 @@ namespace tepinet
                 mail.Subject = "Código de Verificación / Tepinet";
                 mail.IsBodyHtml = false;
                 mail.Body = "!Hola!" + System.Environment.NewLine + 
-                    "Código de verificación para reestablecer contraseña: " + System.Environment.NewLine + Code;
+                    "Código de verificación para reestablecer contraseña: " 
+                        + System.Environment.NewLine + Code;
                 
                 smtp.Send(mail);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("----Error:" + ex.Message);
-                
             }
         }
     }
