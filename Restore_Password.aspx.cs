@@ -9,6 +9,9 @@ using tepinet.Backend.Business;
 using System.Net;
 using System.Net.Mail;
 using System.Timers;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace tepinet
 {
@@ -47,8 +50,6 @@ namespace tepinet
                 mainDiv.Visible = false;
                 codeDiv.Visible = true;
                 SendMail(UEmail);
-
-
             }    
 
         }
@@ -108,6 +109,21 @@ namespace tepinet
             {
                 Console.WriteLine("----Error:" + ex.Message);
             }
+        }
+
+        public static void SendSMS(string number)
+        {
+            string code = GenCode();
+            var accountSid = "ACd1ec33ce579c45b1e4806923ac22d0ee";
+            var authToken = "cb065052daa93e587b7f50ec8aeb37bd";
+            TwilioClient.Init(accountSid, authToken);
+
+            var messageOptions = new CreateMessageOptions(
+                new PhoneNumber("whatsapp:" + number));
+            messageOptions.From = new PhoneNumber("whatsapp:+14155238886");
+            messageOptions.Body = "Tu código de verificacion para tepinet es: " + code;
+
+            var message = MessageResource.Create(messageOptions);
         }
     }
 }
